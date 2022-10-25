@@ -1,0 +1,57 @@
+.card {
+  /* border: 1px solid var(--softer-color); */
+  box-shadow: 1px 1px 5px var(--softer-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__img {
+  width: 30%;
+}
+.card p {
+  color: var(--soft-color);
+}
+.card h4,
+p {
+  margin: 0.5rem auto;
+}
+.card h2 {
+  text-decoration: underline;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px var(--softer-color);
+  transform: scale(1.01);
+}
+.card-price-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-item-btn,
+.remove-item-btn {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-size: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.remove-item-btn {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+.add-item-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.remove-item-btn:hover {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}

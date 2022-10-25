@@ -1,0 +1,21 @@
+.card__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 1040px) {
+  .card__body {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card__body {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .card__body {
+    display: none;
+  }
+}

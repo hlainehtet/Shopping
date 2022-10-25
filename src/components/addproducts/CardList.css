@@ -1,0 +1,67 @@
+.card-list-body {
+  border: 2px solid var(--softer-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.card-list-img {
+  width: 3rem;
+  margin-top: -5rem;
+}
+.card-list-add-minu-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-list-add-minu-body p {
+  margin: 0;
+}
+.plus-items-minu {
+  display: flex;
+}
+.plus-btn,
+.minu-btn,
+.num-of-items {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  min-width: 30px;
+  min-height: 20px;
+  display: inline-block;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  transition: 0.2s;
+}
+.plus-btn,
+.minu-btn {
+  cursor: pointer;
+}
+.plus-btn {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.plus-btn:hover {
+  background-color: var(--color-waring);
+}
+.minu-btn {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.minu-btn:hover {
+  background-color: var(--color-danger);
+}
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.delete-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-danger);
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import CardList from "./CardList";
 import "./AddProducts.css";
+import { useRef } from "react";
 const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
   const total = items
     .reduce((pre, cur) => {
@@ -9,8 +10,10 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
     .toFixed(2);
   // let curDate = new Date();
   // console.log(curDate);
+  const showDivRef = useRef(null);
+
   return (
-    <div className="addproducts__container">
+    <div ref={showDivRef} className="addproducts__container">
       <div className="left-side">
         <div className="check-out-container">
           <div className="check-out-print">
@@ -58,9 +61,7 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
           <button
             className="remove-item-btn"
             onClick={() => {
-              document
-                .querySelector(".addproducts__container")
-                .classList.add("animate");
+              showDivRef.current.classList.add("animate");
               setTimeout(() => click(false), 200);
             }}
           >

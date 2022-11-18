@@ -16,8 +16,8 @@ const App = () => {
     fetch("https://fakestoreapi.com/products/")
       .then((res) => res.json())
       .then((data) => setItem(data));
+    console.count("hi");
   }, []);
-
   function changingSrarchData(e) {
     setSearchValue(e.target.value);
   }
